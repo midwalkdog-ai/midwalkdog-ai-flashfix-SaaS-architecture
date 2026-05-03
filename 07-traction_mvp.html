@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traction & MVP — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            flex: 1;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            padding-left: 16px;
+            border-left: 1px solid #FF8C00;
+        }
+
+        .tech-stack-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #112240;
+        }
+
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .tech-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tech-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #FF8C00;
+            border: 1px solid #112240;
+            padding: 6px 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .status-checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .checkmark {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            color: #FF8C00;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .status-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #E6F1FF;
+            line-height: 1.4;
+        }
+
+        .status-description {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
+        .links-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #112240;
+        }
+
+        .link-item {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .link-label {
+            color: #FF8C00;
+            font-weight: 700;
+        }
+
+        .link-value {
+            color: #E6F1FF;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-grid">
+            <div class="left-column">
+                <h2 class="headline">MVP Built, <span class="accent-text">Live</span>, and Ready to Sell</h2>
+                
+                <div class="features-list">
+                    <div class="feature-item">3 role-based portals (Admin, PM, Contractor)</div>
+                    <div class="feature-item">Instant quote builder (2 minutes vs. 3+ hours)</div>
+                    <div class="feature-item">Real-time job tracking with task-level visibility</div>
+                    <div class="feature-item">Photo documentation with timestamps</div>
+                    <div class="feature-item">Immutable audit log (compliance & accountability)</div>
+                    <div class="feature-item">24 pre-loaded services across 9 categories</div>
+                    <div class="feature-item">Revenue analytics and property readiness scoring</div>
+                </div>
+
+                <div class="tech-stack-section">
+                    <div class="section-label">Tech Stack</div>
+                    <div class="tech-items">
+                        <div class="tech-tag">React</div>
+                        <div class="tech-tag">TypeScript</div>
+                        <div class="tech-tag">Mobile-Responsive</div>
+                        <div class="tech-tag">Real-Time State</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="status-checklist">
+                    <div class="status-item">
+                        <div class="checkmark">✓</div>
+                        <div class="status-text">
+                            <div class="status-title">Fully Functional MVP</div>
+                            <div class="status-description">Deployed and live with all core features</div>
+                        </div>
+                    </div>
+
+                    <div class="status-item">
+                        <div class="checkmark">✓</div>
+                        <div class="status-text">
+                            <div class="status-title">No Traction Required</div>
+                            <div class="status-description">Product speaks for itself — ready for beta customers</div>
+                        </div>
+                    </div>
+
+                    <div class="status-item">
+                        <div class="checkmark">✓</div>
+                        <div class="status-text">
+                            <div class="status-title">Professional Design</div>
+                            <div class="status-description">Industrial dark theme with orange accent</div>
+                        </div>
+                    </div>
+
+                    <div class="status-item">
+                        <div class="checkmark">✓</div>
+                        <div class="status-text">
+                            <div class="status-title">Ready for Onboarding</div>
+                            <div class="status-description">Beta customer pilots and early revenue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="links-section">
+                    <div class="link-item"><span class="link-label">Live URL:</span> <span class="link-value">flashfixsaas-m5cargem.manus.space</span></div>
+                    <div class="link-item"><span class="link-label">GitHub:</span> <span class="link-value">github.com/Flashfix-Property-Services-LLC/flashfix-saas</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

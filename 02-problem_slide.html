@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Problem — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            flex: 1;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .pain-points {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .pain-point {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            padding-left: 16px;
+            border-left: 1px solid #FF8C00;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .metric-box {
+            border: 1px solid #112240;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .metric-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .quote-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #112240;
+        }
+
+        .quote {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .quote-source {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: #FF8C00;
+            margin-top: 12px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-grid">
+            <div class="left-column">
+                <h2 class="headline">Property turnover is slow, expensive, and <span class="accent-text">error-prone</span></h2>
+                
+                <div class="pain-points">
+                    <div class="pain-point">Manual coordination via email and phone calls</div>
+                    <div class="pain-point">Zero real-time visibility into job status</div>
+                    <div class="pain-point">Lost revenue: $50–$200 per day per vacant unit</div>
+                    <div class="pain-point">No audit trail: disputes over work quality and payment</div>
+                    <div class="pain-point">Quote building takes 3–4 hours per property</div>
+                </div>
+
+                <div class="quote-section">
+                    <p class="quote">"We lose $2,000 per day per vacant unit. We need visibility, not email chains."</p>
+                    <p class="quote-source">— Property Manager, 500+ unit portfolio</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value">7–14</div>
+                        <div class="metric-label">Days to turnover (should be 2–3)</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">$5K–$15K</div>
+                        <div class="metric-label">Cost per unit</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">$50B+</div>
+                        <div class="metric-label">Annual turnover spend (US)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "title": "FlashFix: Turning Units Faster, Getting Paid Sooner",
+    "created": 1774350589.4578393,
+    "last_updated": 1774350876.7045846,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "problem_slide",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "market_opportunity",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "solution_overview",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "quote_builder_demo",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "job_tracking_demo",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "traction_mvp",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "business_model",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "go_to_market",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "financial_projections",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "use_of_funds",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "why_now",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "FlashFix: Turning Units Faster, Getting Paid Sooner",
+      "summary": "Title slide introducing FlashFix as the all-in-one platform for property turnover, cutting time from 7-14 days to 48 hours and eliminating coordination chaos.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "problem_slide",
+      "title": "Property Turnover is Broken: $5K-$15K Cost Per Unit",
+      "summary": "Current state analysis showing the pain of manual coordination, lost revenue from vacant units ($50-$200/day), and the $50B+ annual turnover spend market.",
+      "image_plan": "/home/ubuntu/webdev-static-assets/flashfix-property-turnover.jpg - The image visually represents a vacant unit ready for turnover, with tools and supplies, directly illustrating the 'Problem' of property turnover.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "market_opportunity",
+      "title": "$29B Property Management Market Growing 9.7% CAGR",
+      "summary": "Market sizing: $29B TAM in 2026 growing to $61B by 2034. SAM of $3-5B in turnover segment. SOM of $50-100M by Year 5 with comparable exits like AppFolio at $5B+.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "solution_overview",
+      "title": "One Platform, Three Portals, Zero Coordination Chaos",
+      "summary": "FlashFix unifies Admin, Property Manager, and Contractor portals with instant quote builder, real-time job tracking, photo documentation, and immutable audit log.",
+      "image_plan": "/home/ubuntu/webdev-static-assets/flashfix-hero-bg.jpg - The image of a command center with multiple screens displaying data and dashboards perfectly aligns with the 'FlashFix Unifies the Entire Turnover Workflow' and the 'Industrial command center aesthetic' mentioned in the slide content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "quote_builder_demo",
+      "title": "Build Complete Turnover Quotes in Under 2 Minutes",
+      "summary": "24 pre-loaded services across 9 categories. Real example: full turnover reset for $1,499 (drywall, paint, faucet, lock, smoke detector). Contractors see jobs instantly on mobile.",
+      "image_plan": "/home/ubuntu/webdev-static-assets/flashfix-dashboard-preview.jpg - The image displays a dashboard with property statuses, including 'Needs Turnover' and 'In Progress', which directly relates to the 'Product Demo - The Quote Builder in Action' and tracking property readiness.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "job_tracking_demo",
+      "title": "Contractors Complete Jobs 40% Faster with Clear Checklists",
+      "summary": "Mobile app shows task checklist with photo capture, real-time progress tracking, GPS data, and timestamps. Property managers see live progress; admins see full audit trail.",
+      "image_plan": "/home/ubuntu/webdev-static-assets/flashfix-contractor-app.jpg - The image shows a mobile phone with a 'Turnover Checklist' and 'Tasks Completed' progress, directly illustrating 'Real-Time Job Tracking' and the contractor's mobile app.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "traction_mvp",
+      "title": "MVP Built, Live, and Ready to Sell",
+      "summary": "Fully functional MVP deployed with 3 role-based portals, quote builder, job tracking, pricing catalog, audit log, and analytics. No traction required yet—product speaks for itself.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "business_model",
+      "title": "Three Revenue Streams: Subscription + Marketplace + Licensing",
+      "summary": "Subscription: Starter $99/mo, Professional $249/mo, Enterprise $699/mo. Marketplace: 5% commission on contractor jobs. White-label licensing: $5K-$50K one-time. 40% gross margin.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "go_to_market",
+      "title": "Land Fast: Target Mid-Market Property Managers First",
+      "summary": "Phase 1: 10-20 beta customers (50-500 unit portfolios). Phase 2: 100+ customers, $50K+ MRR via content and referrals. Phase 3: Enterprise expansion. CAC $500-$1K, 3-4 month payback.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "financial_projections",
+      "title": "Path to $1M ARR by Year 2: Conservative Growth Model",
+      "summary": "Year 1: $594K ARR (75 customers). Year 2: $1.02M ARR (250+ customers). Year 3: $2.1M ARR (500+ customers). 70% gross margin, -20% operating margin Year 1, 10% by Year 3.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "use_of_funds",
+      "title": "$500K Seed Round: Product, Sales, Operations",
+      "summary": "Product & Engineering 40% ($200K), Sales & Marketing 35% ($175K), Operations 15% ($75K). 18-month runway to profitability with conservative growth.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "why_now",
+      "title": "Perfect Storm: Labor Shortage, Digital Transformation, Investor Demand",
+      "summary": "Post-COVID digital adoption accelerating. Labor shortage forcing automation. Investor pressure for faster ROI (48-hour turnovers = 15% higher returns). ESG compliance mandatory.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

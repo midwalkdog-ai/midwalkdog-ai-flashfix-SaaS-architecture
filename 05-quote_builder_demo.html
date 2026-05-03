@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Builder Demo — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px; /* must not be reduced */
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text { color: #FF8C00; }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px; /* reduced from 60 */
+            flex: 1;
+        }
+
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .workflow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* reduced from 20 */
+            margin-bottom: 24px; /* reduced from 40 */
+        }
+
+        .workflow-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px; /* reduced from 16 */
+        }
+
+        .step-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            width: 32px;
+            flex-shrink: 0;
+        }
+
+        .step-content { display: flex; flex-direction: column; }
+
+        .step-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #E6F1FF;
+            margin-bottom: 4px;
+        }
+
+        .step-description {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.4;
+        }
+
+        .pricing-example {
+            border: 1px solid #112240;
+            padding: 16px; /* reduced from 24 */
+        }
+
+        .pricing-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px; /* reduced */
+        }
+
+        .pricing-items {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; /* reduced from 12 */
+            margin-bottom: 8px; /* reduced from 16 */
+            padding-bottom: 8px; /* reduced from 16 */
+            border-bottom: 1px solid #112240;
+        }
+
+        .pricing-item { display: flex; justify-content: space-between; align-items: center; }
+
+        .item-name {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+        }
+
+        .item-price {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 900;
+            color: #FF8C00;
+        }
+
+        .pricing-total { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+
+        .total-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .total-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #FF8C00;
+        }
+
+        .dashboard-image {
+            width: 100%;
+            height: 140px; /* reduced from 280 */
+            object-fit: contain;
+            margin-top: 12px; /* reduced from 20 */
+            border: 1px solid #112240;
+            padding: 12px;
+        }
+
+        .services-note {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+            margin-top: 10px; /* reduced from 30 */
+            padding-top: 8px; /* reduced from 20 */
+            border-top: 1px solid #112240;
+        }
+
+        .services-highlight { color: #FF8C00; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h2 class="headline">Build complete turnover quotes in <span class="accent-text">under 2 minutes</span></h2>
+
+        <div class="content-grid">
+            <div class="left-column">
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-title">Select Property</div>
+                            <div class="step-description">Choose from portfolio</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-title">Choose Services</div>
+                            <div class="step-description">From pre-loaded catalog</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-title">Set Quantities</div>
+                            <div class="step-description">Customize for property</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-title">Submit for Approval</div>
+                            <div class="step-description">Send to contractor</div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-title">Done</div>
+                            <div class="step-description">Contractor sees job instantly</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="pricing-example">
+                    <div class="pricing-title">Real Example: Full Turnover Reset</div>
+                    <div class="pricing-items">
+                        <div class="pricing-item">
+                            <span class="item-name">Drywall Repair &amp; Paint</span>
+                            <span class="item-price">$450</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="item-name">Interior Paint (2 rooms)</span>
+                            <span class="item-price">$600</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="item-name">Faucet Replacement</span>
+                            <span class="item-price">$180</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="item-name">Lock &amp; Key Change</span>
+                            <span class="item-price">$120</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="item-name">Smoke Detector Install</span>
+                            <span class="item-price">$49</span>
+                        </div>
+                    </div>
+                    <div class="pricing-total">
+                        <span class="total-label">Total Quote</span>
+                        <span class="total-value">$1,499</span>
+                    </div>
+                </div>
+
+                <img src="/home/ubuntu/webdev-static-assets/flashfix-dashboard-preview.jpg" alt="FlashFix Dashboard Preview" class="dashboard-image">
+            </div>
+        </div>
+
+        <div class="services-note">
+            <span class="services-highlight">24 pre-loaded services</span> across 9 categories: Turnover Packages, Handyman, Painting, Flooring, Plumbing, Electrical, Appliances, Exterior, Property Support. Pricing ranges: $35 (smoke detector) to $2,750 (full apartment reset).
+        </div>
+    </div>
+</body>
+</html>

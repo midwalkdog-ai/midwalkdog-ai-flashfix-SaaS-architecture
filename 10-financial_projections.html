@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Projections — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px; /* keep upper padding */
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px; /* reduced bottom padding to save height */
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 20px; /* reduced spacing under title */
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .projections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px; /* reduced gap */
+            margin-bottom: 24px; /* reduced bottom spacing */
+            flex: 1;
+        }
+
+        .year-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; /* tighter stacking */
+        }
+
+        .year-header {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .metric-box {
+            border: 1px solid #112240;
+            padding: 10px; /* reduced padding */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .metric-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .metric-detail {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.4;
+        }
+
+        .quarter-box {
+            border: 1px solid #112240;
+            padding: 8px; /* reduced padding */
+        }
+
+        .quarter-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .quarter-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+        }
+
+        .quarter-customers {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            color: #8892B0;
+            margin-top: 4px;
+        }
+
+        .assumptions-section {
+            border-top: 1px solid #112240;
+            padding-top: 12px; /* reduced */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* reduced */
+        }
+
+        .assumption-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .assumption-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .assumption-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+        }
+
+        .assumption-detail {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #8892B0;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        .margins-note {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-top: 12px; /* reduced */
+            padding-top: 12px; /* reduced */
+            border-top: 1px solid #112240;
+        }
+
+        .margin-highlight {
+            color: #FF8C00;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h2 class="headline">Conservative growth model: <span class="accent-text">$50K MRR by end of Year 1</span>, <span class="accent-text">$1M ARR by Year 2</span></h2>
+
+        <div class="projections-grid">
+            <!-- Year 1 Quarterly -->
+            <div class="year-column">
+                <div class="year-header">Year 1 — Quarterly Progression</div>
+                
+                <div class="quarter-box">
+                    <div class="quarter-label">Q1</div>
+                    <div class="quarter-value">$2.5K</div>
+                    <div class="quarter-customers">10 customers</div>
+                </div>
+
+                <div class="quarter-box">
+                    <div class="quarter-label">Q2</div>
+                    <div class="quarter-value">$7K</div>
+                    <div class="quarter-customers">25 customers</div>
+                </div>
+
+                <div class="quarter-box">
+                    <div class="quarter-label">Q3</div>
+                    <div class="quarter-value">$15K</div>
+                    <div class="quarter-customers">50 customers</div>
+                </div>
+
+                <div class="quarter-box">
+                    <div class="quarter-label">Q4</div>
+                    <div class="quarter-value">$25K</div>
+                    <div class="quarter-customers">75 customers</div>
+                </div>
+
+                <div class="metric-box" style="margin-top:6px;">
+                    <div class="metric-label">Year 1 Total</div>
+                    <div class="metric-value">$594K</div>
+                    <div class="metric-detail">Annual Recurring Revenue (ARR)</div>
+                </div>
+            </div>
+
+            <!-- Year 2 -->
+            <div class="year-column">
+                <div class="year-header">Year 2 — Annual</div>
+                
+                <div class="metric-box">
+                    <div class="metric-label">MRR</div>
+                    <div class="metric-value">$85K</div>
+                    <div class="metric-detail">Monthly Recurring Revenue</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">ARR</div>
+                    <div class="metric-value">$1.02M</div>
+                    <div class="metric-detail">Annual Recurring Revenue</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">Customers</div>
+                    <div class="metric-value">250+</div>
+                    <div class="metric-detail">Subscription customers</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">Gross Margin</div>
+                    <div class="metric-value">70%</div>
+                    <div class="metric-detail">SaaS standard</div>
+                </div>
+            </div>
+
+            <!-- Year 3 -->
+            <div class="year-column">
+                <div class="year-header">Year 3 — Annual</div>
+                
+                <div class="metric-box">
+                    <div class="metric-label">MRR</div>
+                    <div class="metric-value">$175K</div>
+                    <div class="metric-detail">Monthly Recurring Revenue</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">ARR</div>
+                    <div class="metric-value">$2.1M</div>
+                    <div class="metric-detail">Annual Recurring Revenue</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">Customers</div>
+                    <div class="metric-value">500+</div>
+                    <div class="metric-detail">Subscription customers</div>
+                </div>
+
+                <div class="metric-box">
+                    <div class="metric-label">Operating Margin</div>
+                    <div class="metric-value">10%</div>
+                    <div class="metric-detail">Path to profitability</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="assumptions-section">
+            <div class="assumption-item">
+                <div class="assumption-label">Year 1 Growth Rate</div>
+                <div class="assumption-value">30%</div>
+                <div class="assumption-detail">Month-over-month growth (MoM)</div>
+            </div>
+            <div class="assumption-item">
+                <div class="assumption-label">Year 2 Growth Rate</div>
+                <div class="assumption-value">15%</div>
+                <div class="assumption-detail">Month-over-month growth (MoM)</div>
+            </div>
+            <div class="assumption-item">
+                <div class="assumption-label">Year 3 Growth Rate</div>
+                <div class="assumption-value">10%</div>
+                <div class="assumption-detail">Month-over-month growth (MoM)</div>
+            </div>
+        </div>
+
+        <div class="margins-note">
+            <span class="margin-highlight">Operating Margin Progression:</span> Year 1 at <span class="margin-highlight">-20%</span> (investing in sales and product), Year 2 at <span class="margin-highlight">-5%</span> (scaling operations), Year 3 at <span class="margin-highlight">10%</span> (breakeven and profitability path)
+        </div>
+    </div>
+</body>
+</html>

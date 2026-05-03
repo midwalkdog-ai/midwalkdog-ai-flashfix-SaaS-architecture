@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Funds — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .fund-allocation {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            flex: 1;
+        }
+
+        .fund-box {
+            border: 1px solid #112240;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fund-category {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .fund-percentage {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .fund-amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .fund-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fund-item {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+            padding-left: 12px;
+            border-left: 1px solid #FF8C00;
+        }
+
+        .runway-section {
+            border-top: 1px solid #112240;
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+
+        .runway-metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .runway-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .runway-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .runway-detail {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h2 class="headline">$500K seed round funds <span class="accent-text">product, sales, and operations</span> through Year 1 profitability</h2>
+
+        <div class="fund-allocation">
+            <div class="fund-box">
+                <div class="fund-category">Product & Engineering</div>
+                <div class="fund-percentage">40%</div>
+                <div class="fund-amount">$200K</div>
+                <div class="fund-items">
+                    <div class="fund-item">Stripe payment integration</div>
+                    <div class="fund-item">Advanced analytics and reporting</div>
+                    <div class="fund-item">Mobile app (iOS/Android native)</div>
+                    <div class="fund-item">API for third-party integrations</div>
+                </div>
+            </div>
+
+            <div class="fund-box">
+                <div class="fund-category">Sales & Marketing</div>
+                <div class="fund-percentage">35%</div>
+                <div class="fund-amount">$175K</div>
+                <div class="fund-items">
+                    <div class="fund-item">Founding sales hire</div>
+                    <div class="fund-item">Content marketing and SEO</div>
+                    <div class="fund-item">Industry event sponsorships</div>
+                    <div class="fund-item">Paid acquisition (Google, LinkedIn)</div>
+                </div>
+            </div>
+
+            <div class="fund-box">
+                <div class="fund-category">Operations & Admin</div>
+                <div class="fund-percentage">15%</div>
+                <div class="fund-amount">$75K</div>
+                <div class="fund-items">
+                    <div class="fund-item">Finance and legal</div>
+                    <div class="fund-item">Customer support team</div>
+                    <div class="fund-item">Infrastructure and hosting</div>
+                    <div class="fund-item">Compliance and security</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="runway-section">
+            <div class="runway-metric">
+                <div class="runway-label">Runway to Profitability</div>
+                <div class="runway-value">18 months</div>
+                <div class="runway-detail">Conservative growth with $500K seed allocation</div>
+            </div>
+            <div class="runway-metric">
+                <div class="runway-label">Path to Breakeven</div>
+                <div class="runway-value">Month 18</div>
+                <div class="runway-detail">Achieving 10% operating margin with 250+ customers</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

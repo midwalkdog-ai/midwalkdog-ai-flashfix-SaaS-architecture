@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-to-Market Strategy — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .phases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .phase-box {
+            border: 1px solid #112240;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .phase-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .phase-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .phase-timeline {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #112240;
+        }
+
+        .phase-metric {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            color: #FF8C00;
+            font-weight: 700;
+        }
+
+        .channels-section {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid #112240;
+        }
+
+        .channels-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .channel-item {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+            margin-bottom: 4px;
+            padding-left: 8px;
+            border-left: 1px solid #FF8C00;
+        }
+
+        .economics-section {
+            border-top: 1px solid #112240;
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .economic-metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .economic-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .economic-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .economic-detail {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h2 class="headline">Target mid-market property managers first, then <span class="accent-text">expand vertically</span></h2>
+
+        <div class="phases-grid">
+            <div class="phase-box">
+                <div class="phase-label">Phase 1</div>
+                <div class="phase-title">Beta Launch</div>
+                <div class="phase-timeline">Months 1–6</div>
+                <div class="phase-metric"><span class="metric-value">10–20</span> beta customers</div>
+                <div class="phase-metric"><span class="metric-value">50–500</span> unit portfolios (sweet spot)</div>
+                <div class="phase-metric">Free 90-day pilot + 20% discount Year 1</div>
+                <div class="channels-section">
+                    <div class="channels-label">Channels</div>
+                    <div class="channel-item">Direct outreach to property managers</div>
+                    <div class="channel-item">Industry events (NARPM, IREM)</div>
+                    <div class="channel-item">Tech accelerator partnerships</div>
+                </div>
+            </div>
+
+            <div class="phase-box">
+                <div class="phase-label">Phase 2</div>
+                <div class="phase-title">Paid Growth</div>
+                <div class="phase-timeline">Months 7–12</div>
+                <div class="phase-metric"><span class="metric-value">100+</span> customers</div>
+                <div class="phase-metric"><span class="metric-value">$50K+</span> MRR</div>
+                <div class="phase-metric">Word-of-mouth and content marketing</div>
+                <div class="channels-section">
+                    <div class="channels-label">Channels</div>
+                    <div class="channel-item">Content marketing (guides, playbooks)</div>
+                    <div class="channel-item">SaaS directories and reviews</div>
+                    <div class="channel-item">Referral program incentives</div>
+                </div>
+            </div>
+
+            <div class="phase-box">
+                <div class="phase-label">Phase 3</div>
+                <div class="phase-title">Enterprise</div>
+                <div class="phase-timeline">Year 2+</div>
+                <div class="phase-metric"><span class="metric-value">1,000+</span> unit portfolios</div>
+                <div class="phase-metric">Franchises and large operators</div>
+                <div class="phase-metric">Institutional investor partnerships</div>
+                <div class="channels-section">
+                    <div class="channels-label">Channels</div>
+                    <div class="channel-item">Dedicated sales team</div>
+                    <div class="channel-item">Platform partnerships</div>
+                    <div class="channel-item">Enterprise sales cycles</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="economics-section">
+            <div class="economic-metric">
+                <div class="economic-label">Customer Acquisition Cost (CAC)</div>
+                <div class="economic-value">$500–$1K</div>
+                <div class="economic-detail">Per customer across all channels</div>
+            </div>
+            <div class="economic-metric">
+                <div class="economic-label">Payback Period</div>
+                <div class="economic-value">3–4 Mo</div>
+                <div class="economic-detail">Months to recover CAC</div>
+            </div>
+            <div class="economic-metric">
+                <div class="economic-label">Lifetime Value (LTV)</div>
+                <div class="economic-value">$35K+</div>
+                <div class="economic-detail">Professional plan over 5 years</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model — FlashFix Investor Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #0A192F;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .headline {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #E6F1FF;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .accent-text {
+            color: #FF8C00;
+        }
+
+        .revenue-streams {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stream-box {
+            border: 1px solid #112240;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stream-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .stream-percentage {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .stream-description {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .pricing-tier {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            padding-left: 12px;
+            border-left: 1px solid #FF8C00;
+        }
+
+        .pricing-value {
+            color: #FF8C00;
+            font-weight: 700;
+        }
+
+        .economics-section {
+            border-top: 1px solid #112240;
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .economic-metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .economic-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #8892B0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .economic-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #FF8C00;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .economic-detail {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #8892B0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h2 class="headline">Three revenue streams: <span class="accent-text">Subscription + Marketplace + Licensing</span></h2>
+
+        <div class="revenue-streams">
+            <div class="stream-box">
+                <div class="stream-title">Revenue Stream 1</div>
+                <div class="stream-percentage">70%</div>
+                <div class="stream-description">Recurring SaaS subscription</div>
+                <div class="pricing-tier"><span class="pricing-value">Starter:</span> $99/mo (up to 25 properties, 3 contractor seats)</div>
+                <div class="pricing-tier"><span class="pricing-value">Professional:</span> $249/mo (up to 100 properties, unlimited contractors)</div>
+                <div class="pricing-tier"><span class="pricing-value">Enterprise:</span> $699/mo (unlimited properties, dedicated support)</div>
+            </div>
+
+            <div class="stream-box">
+                <div class="stream-title">Revenue Stream 2</div>
+                <div class="stream-percentage">20%</div>
+                <div class="stream-description">Marketplace commission</div>
+                <div class="pricing-tier"><span class="pricing-value">5% commission</span> on contractor jobs booked through platform</div>
+                <div class="pricing-tier" style="margin-top: 16px;">Contractor directory and ratings system</div>
+                <div class="pricing-tier">Enables job discovery and contractor matching</div>
+            </div>
+
+            <div class="stream-box">
+                <div class="stream-title">Revenue Stream 3</div>
+                <div class="stream-percentage">10%</div>
+                <div class="stream-description">White-label licensing</div>
+                <div class="pricing-tier"><span class="pricing-value">$5K–$50K</span> one-time license fee</div>
+                <div class="pricing-tier" style="margin-top: 16px;">Enterprise customers rebrand platform for their portfolio</div>
+                <div class="pricing-tier">Custom integrations and dedicated support</div>
+            </div>
+        </div>
+
+        <div class="economics-section">
+            <div class="economic-metric">
+                <div class="economic-label">Professional Plan Annual Value</div>
+                <div class="economic-value">$2,988</div>
+                <div class="economic-detail">$249/month × 12 months per customer</div>
+            </div>
+            <div class="economic-metric">
+                <div class="economic-label">Gross Margin</div>
+                <div class="economic-value">40%</div>
+                <div class="economic-detail">SaaS standard with platform scaling</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
